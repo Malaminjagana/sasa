@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0A6E4E;
+  --color-primary-light: #12A876;
+  --color-accent: #F4A72A;
+  --color-dark: #0D1117;
+  --color-surface: #111827;
+  --color-text: #E5E7EB;
+  --color-muted: #6B7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
+
+.gradient-text {
+  background: linear-gradient(135deg, #12A876, #F4A72A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.hero-gradient {
+  background: radial-gradient(ellipse at 20% 50%, rgba(10, 110, 78, 0.3) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(244, 167, 42, 0.15) 0%, transparent 50%),
+              var(--color-dark);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(10, 110, 78, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(10, 110, 78, 0.6); }
+}
+
+.animate-glow { animation: pulse-glow 3s ease-in-out infinite; }
