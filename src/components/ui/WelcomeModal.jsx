@@ -8,33 +8,53 @@ import { MdLanguage } from 'react-icons/md'
 export default function WelcomeModal() {
   const { selectLanguage, setShowWelcomeModal } = useLanguage()
   const [visible, setVisible] = useState(false)
-  const audioPlayed = useRef(false)
   const navigate = useNavigate()
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 500)
-    if (!audioPlayed.current) {
-      audioPlayed.current = true
-      const utterance = new SpeechSynthesisUtterance(
-        'Welcome to SASA, powered by Kuringo. Connecting families across Europe and the UK to West Africa. Fast, affordable, and trusted.'
-      )
-      utterance.rate = 0.9
-      utterance.pitch = 1
-      utterance.volume = 0.8
-      setTimeout(() => {
-        if ('speechSynthesis' in window) {
-          window.speechSynthesis.speak(utterance)
-        }
-      }, 800)
-    }
     return () => clearTimeout(timer)
   }, [])
 
-  const finishSelection = (language, path) => {
+  const getWelcomeVoice = () => {
+    if (!('speechSynthesis' in window)) return null
+
+    const voices = window.speechSynthesis.getVoices()
+    return (
+      voices.find((voice) => /en[-_]?us|zira|female|google/i.test(`${voice.name} ${voice.lang}`)) ||
+      voices[0] ||
+      null
+    )
+  }
+
+  const speakWelcome = async () => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+
+    const text =
+      'Welcome to SASA, powered by Kuringo. Connecting families across Europe and the UK to West Africa. Fast, affordable, and trusted.'
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.rate = 0.85
+    utterance.pitch = 1
+    utterance.volume = 0.9
+    utterance.lang = 'en-US'
+    utterance.voice = getWelcomeVoice() || undefined
+
+    return new Promise((resolve) => {
+      utterance.onend = resolve
+      utterance.onerror = resolve
+      window.speechSynthesis.speak(utterance)
+    })
+  }
+
+  const finishSelection = async (language, path) => {
     window.speechSynthesis?.cancel()
     selectLanguage(language)
     setShowWelcomeModal(false)
     navigate(path)
+  }
+
+  const handleSelection = async (language, path) => {
+    await speakWelcome()
+    finishSelection(language, path)
   }
 
   return (
@@ -97,7 +117,7 @@ export default function WelcomeModal() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => finishSelection('soninke', '/soninke-assistant')}
+                onClick={() => handleSelection('soninke', '/soninke-assistant')}
                 className="w-full p-4 rounded-2xl bg-gradient-to-r from-[#29B7F4]/30 to-[#29B7F4]/20 border border-[#29B7F4]/50 hover:border-[#29B7F4] transition-all group"
               >
                 <div className="flex items-center gap-4">
@@ -123,7 +143,7 @@ export default function WelcomeModal() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => finishSelection('english', '/')}
+                onClick={() => handleSelection('english', '/')}
                 className="w-full p-4 rounded-2xl glass-card border border-white/10 hover:border-[#29B7F4]/50 transition-all group"
               >
                 <div className="flex items-center gap-4">
