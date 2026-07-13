@@ -6,7 +6,7 @@ const rails = [
     number: '01',
     title: 'Mobile Wallet',
     subtitle: 'Instant delivery into a mobile money wallet',
-    color: '#12A876',
+    color: '#29B7F4',
     glow: 'rgba(18,168,118,0.15)',
     icon: '📱',
     providers: [
@@ -34,7 +34,7 @@ const rails = [
     providers: [
       {
         name: 'Full Bank Coverage',
-        detail: 'Trust Bank, GTBank, Access Bank, First International Bank, Ecobank, AGIB, Zenith Bank, FBN Bank, Vista Bank and more.',
+        detail: 'Trust Bank, GTBank, Access Bank, First Montserratnational Bank, Ecobank, AGIB, Zenith Bank, FBN Bank, Vista Bank and more.',
       },
       {
         name: 'Best For',
@@ -46,7 +46,7 @@ const rails = [
     number: '03',
     title: 'Cash Pickup',
     subtitle: 'Over-the-counter collection via JFIN & affiliates nationwide',
-    color: '#F4A72A',
+    color: '#C2242B',
     glow: 'rgba(244,167,42,0.15)',
     icon: '🏪',
     providers: [
@@ -79,7 +79,7 @@ export default function PaymentRails() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#12A876] text-sm font-semibold uppercase tracking-widest">Delivery Options</span>
+          <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Delivery Options</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
             3 Ways to <span className="gradient-text">Receive Money</span>
           </h2>
@@ -142,10 +142,10 @@ export default function PaymentRails() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-12 glass-card rounded-2xl p-6 text-center border border-[#F4A72A]/20"
+          className="mt-12 glass-card rounded-2xl p-6 text-center border border-[#C2242B]/20"
         >
           <p className="text-gray-400 text-sm">
-            <span className="text-[#F4A72A] font-semibold">Note for recipients:</span> No bank account? No problem.
+            <span className="text-[#C2242B] font-semibold">Note for recipients:</span> No bank account? No problem.
             With mobile wallets and JFIN cash pickup across Banjul and upcountry, every family in The Gambia can receive money from KURINGO.
           </p>
         </motion.div>

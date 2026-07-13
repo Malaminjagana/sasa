@@ -55,7 +55,7 @@ export default function ChatBot() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-br from-[#0A6E4E] to-[#12A876] rounded-full flex items-center justify-center shadow-2xl animate-glow"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] rounded-full flex items-center justify-center shadow-2xl animate-glow"
         aria-label="Open chat"
       >
         <AnimatePresence mode="wait">
@@ -72,9 +72,9 @@ export default function ChatBot() {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 glass-card rounded-3xl overflow-hidden shadow-2xl border border-[#0A6E4E]/40"
+            className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 glass-card rounded-3xl overflow-hidden shadow-2xl border border-[#29B7F4]/40"
           >
-            <div className="bg-gradient-to-r from-[#0A6E4E] to-[#12A876] px-5 py-4">
+            <div className="bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] px-5 py-4">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
                   <span className="text-white text-lg">🤖</span>
@@ -101,7 +101,7 @@ export default function ChatBot() {
                 >
                   <div className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                     msg.from === 'user'
-                      ? 'bg-gradient-to-br from-[#0A6E4E] to-[#12A876] text-white rounded-br-sm'
+                      ? 'bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] text-white rounded-br-sm'
                       : 'glass-card text-gray-300 rounded-bl-sm'
                   }`}>
                     {msg.text}
@@ -118,12 +118,12 @@ export default function ChatBot() {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKey}
                   placeholder="Ask about sending money..."
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#12A876]/50 transition-colors"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#29B7F4]/50 transition-colors"
                 />
                 <motion.button
                   whileTap={{ scale: 0.9 }}
                   onClick={sendMessage}
-                  className="w-10 h-10 bg-gradient-to-br from-[#0A6E4E] to-[#12A876] rounded-xl flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] rounded-xl flex items-center justify-center flex-shrink-0"
                 >
                   <HiPaperAirplane size={16} className="text-white rotate-90" />
                 </motion.button>

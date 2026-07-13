@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { FaGooglePlay, FaApple } from 'react-icons/fa'
 import AnimatedCard from '../ui/AnimatedCard'
 
-// Replace this URL with the real KURINGO app download link
-const APP_URL = 'https://kuringo.com/download'
+// Official KURINGO website
+const APP_URL = 'https://kuringo.com/'
 
 export default function AppDownload() {
   return (
@@ -23,7 +23,7 @@ export default function AppDownload() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#12A876] text-sm font-semibold uppercase tracking-widest">Get the App</span>
+          <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Get the App</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
             Download <span className="gradient-text">KURINGO</span> Free
           </h2>
@@ -37,24 +37,43 @@ export default function AppDownload() {
           {/* QR Code Card */}
           <AnimatedCard className="p-8 text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
-              <div className="w-2 h-2 rounded-full bg-[#12A876] animate-pulse" />
-              <span className="text-[#12A876] text-sm font-medium">Scan to Download</span>
+              <div className="w-2 h-2 rounded-full bg-[#29B7F4] animate-pulse" />
+              <span className="text-[#29B7F4] text-sm font-medium">Scan to Visit</span>
             </div>
 
-            {/* QR Code with border */}
-            <div className="inline-block p-4 rounded-2xl bg-white mb-6">
+            <div className="inline-flex p-4 rounded-2xl bg-white shadow-sm">
               <QRCodeSVG
                 value={APP_URL}
                 size={180}
                 bgColor="#ffffff"
-                fgColor="#0A6E4E"
+                fgColor="#29B7F4"
                 level="H"
                 includeMargin={false}
               />
             </div>
 
-            <p className="text-gray-400 text-sm">
-              Point your phone camera at the QR code to open the download page
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <a
+                href={APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-[#29B7F4]/30 bg-[#29B7F4]/10 px-5 py-2.5 text-sm font-semibold text-[#29B7F4] transition-all duration-200 hover:bg-[#29B7F4]/20 hover:scale-[1.02]"
+              >
+                Download KURINGO
+              </a>
+
+              <a
+                href={APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex text-[13px] text-gray-300 hover:text-[#29B7F4] transition-colors"
+              >
+                {APP_URL}
+              </a>
+            </div>
+
+            <p className="mt-4 text-gray-400 text-sm">
+              Scan the QR code or tap the button above to open the official website.
             </p>
           </AnimatedCard>
 
@@ -74,7 +93,7 @@ export default function AppDownload() {
                   <div className="text-gray-400 text-xs">Download on the</div>
                   <div className="text-white font-bold text-xl font-display">App Store</div>
                 </div>
-                <div className="ml-auto text-[#12A876] opacity-0 group-hover:opacity-100 transition-opacity text-xl">
+                <div className="ml-auto text-[#29B7F4] opacity-0 group-hover:opacity-100 transition-opacity text-xl">
                   →
                 </div>
               </a>
@@ -93,7 +112,7 @@ export default function AppDownload() {
                   <div className="text-gray-400 text-xs">Get it on</div>
                   <div className="text-white font-bold text-xl font-display">Google Play</div>
                 </div>
-                <div className="ml-auto text-[#12A876] opacity-0 group-hover:opacity-100 transition-opacity text-xl">
+                <div className="ml-auto text-[#29B7F4] opacity-0 group-hover:opacity-100 transition-opacity text-xl">
                   →
                 </div>
               </a>
@@ -106,7 +125,7 @@ export default function AppDownload() {
                 href={APP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#12A876] text-sm font-medium hover:underline"
+                className="text-[#29B7F4] text-sm font-medium hover:underline"
               >
                 kuringo.com/download
               </a>

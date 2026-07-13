@@ -60,7 +60,7 @@ function FAQItem({ item, index }) {
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
-          className="text-[#12A876] flex-shrink-0"
+          className="text-[#29B7F4] flex-shrink-0"
         >
           <HiChevronDown size={20} />
         </motion.div>
@@ -95,7 +95,7 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-[#F4A72A] text-sm font-semibold uppercase tracking-widest">Got Questions?</span>
+          <span className="text-[#C2242B] text-sm font-semibold uppercase tracking-widest">Got Questions?</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>

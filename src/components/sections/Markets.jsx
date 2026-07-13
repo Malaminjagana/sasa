@@ -5,36 +5,36 @@ const markets = [
   {
     flag: '🇫🇷',
     country: 'France',
-    phase: 'Phase 1',
-    phaseColor: '#12A876',
+    phase: 'Active',
+    phaseColor: '#C2242B',
     detail: 'Largest West African community in Europe. Major Soninke, Senegalese, and Malian diaspora with strong cultural and remittance ties.',
   },
   {
     flag: '🇮🇹',
     country: 'Italy',
-    phase: 'Phase 1',
-    phaseColor: '#12A876',
+    phase: 'Active',
+    phaseColor: '#C2242B',
     detail: 'Significant Gambian and Senegalese diaspora. Historically a major West African migration corridor.',
   },
   {
     flag: '🇪🇸',
     country: 'Spain',
-    phase: 'Phase 1',
-    phaseColor: '#12A876',
+    phase: 'Active',
+    phaseColor: '#C2242B',
     detail: 'Growing West African population along Mediterranean cities with rising economic integration.',
   },
   {
     flag: '🇩🇪',
     country: 'Germany',
-    phase: 'Phase 2',
-    phaseColor: '#60A5FA',
+    phase: 'Active',
+    phaseColor: '#C2242B',
     detail: 'Rapidly growing African diaspora; strong professional and student communities from across West Africa.',
   },
   {
     flag: '🇬🇧',
     country: 'United Kingdom',
     phase: 'Active',
-    phaseColor: '#F4A72A',
+    phaseColor: '#C2242B',
     detail: 'Well-established Gambian community. UK registration provides FCA regulatory credibility and direct market access.',
   },
 ]
@@ -50,7 +50,7 @@ export default function Markets() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#F4A72A] text-sm font-semibold uppercase tracking-widest">Our Reach</span>
+          <span className="text-[#C2242B] text-sm font-semibold uppercase tracking-widest">Our Reach</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
             5+ Markets Across <span className="gradient-text">Europe & UK</span>
           </h2>
@@ -65,17 +65,17 @@ export default function Markets() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass-card rounded-2xl p-6 mb-10 border border-[#12A876]/30"
+          className="glass-card rounded-2xl p-6 mb-10 border border-[#29B7F4]/30"
         >
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <span className="text-[#12A876] text-xs font-bold uppercase tracking-wider">Phase 1 — Soninke Community</span>
+              <span className="text-[#29B7F4] text-xs font-bold uppercase tracking-wider">Phase 1 — Soninke Community</span>
               <h3 className="text-white font-semibold text-lg mt-2 mb-3">The most active remittance senders in Europe</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li className="flex items-center gap-2"><span className="text-[#12A876]">•</span> Highest per-capita remittance senders</li>
-                <li className="flex items-center gap-2"><span className="text-[#12A876]">•</span> Strong associations in France, Italy & Spain</li>
-                <li className="flex items-center gap-2"><span className="text-[#12A876]">•</span> Corridor alignment: Senegal, Mali, Gambia</li>
-                <li className="flex items-center gap-2"><span className="text-[#12A876]">•</span> Deep culture of "Soninke solidarity" & tontines</li>
+                <li className="flex items-center gap-2"><span className="text-[#29B7F4]">•</span> Highest per-capita remittance senders</li>
+                <li className="flex items-center gap-2"><span className="text-[#29B7F4]">•</span> Strong associations in France, Italy & Spain</li>
+                <li className="flex items-center gap-2"><span className="text-[#29B7F4]">•</span> Corridor alignment: Senegal, Mali, Gambia</li>
+                <li className="flex items-center gap-2"><span className="text-[#29B7F4]">•</span> Deep culture of "Soninke solidarity" & tontines</li>
               </ul>
             </div>
             <div>

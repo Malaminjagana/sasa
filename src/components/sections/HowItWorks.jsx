@@ -38,7 +38,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#F4A72A] text-sm font-semibold uppercase tracking-widest">Getting Started</span>
+          <span className="text-[#C2242B] text-sm font-semibold uppercase tracking-widest">Getting Started</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4"> Up and running in <span className="gradient-text">4 steps</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
@@ -48,7 +48,7 @@ export default function HowItWorks() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
           {/* Connector line (desktop only) */}
-          <div className="hidden lg:block absolute top-12 left-[12%] right-[12%] h-px bg-gradient-to-r from-[#0A6E4E] via-[#F4A72A] to-[#12A876] opacity-30" />
+          <div className="hidden lg:block absolute top-12 left-[12%] right-[12%] h-px bg-gradient-to-r from-[#29B7F4] via-[#C2242B] to-[#29B7F4] opacity-30" />
 
           {steps.map((step, i) => (
             <motion.div
@@ -59,9 +59,9 @@ export default function HowItWorks() {
               transition={{ delay: i * 0.15, duration: 0.5 }}
               className="relative"
             >
-              <div className="glass-card rounded-2xl p-6 h-full hover:border-[#0A6E4E]/40 transition-colors">
+              <div className="glass-card rounded-2xl p-6 h-full hover:border-[#29B7F4]/40 transition-colors">
                 {/* Step number bubble */}
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0A6E4E] to-[#12A876] flex items-center justify-center font-display text-white font-bold text-lg mb-5 shadow-lg shadow-[#0A6E4E]/30">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center font-display text-white font-bold text-lg mb-5 shadow-lg shadow-[#29B7F4]/30">
                   {step.step}
                 </div>
 

@@ -21,7 +21,7 @@ export default function HowToReceive() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-14"
         >
-          <Link to="/" className="text-[#12A876] text-sm hover:underline mb-4 inline-block">
+          <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">
             ← Back to Home
           </Link>
           <h1 className="font-display text-5xl font-bold text-white mb-4">
@@ -37,11 +37,11 @@ export default function HowToReceive() {
             <AnimatedCard key={i} delay={i * 0.1} className="p-6">
               <div className="flex items-start gap-5">
                 <div className="flex flex-col items-center gap-2 flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#F4A72A]/80 to-[#F4A72A] flex items-center justify-center font-display font-bold text-white shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C2242B]/80 to-[#C2242B] flex items-center justify-center font-display font-bold text-white shadow-lg">
                     {i + 1}
                   </div>
                   {i < receiveSteps.length - 1 && (
-                    <div className="w-px h-6 bg-[#F4A72A]/30" />
+                    <div className="w-px h-6 bg-[#C2242B]/30" />
                   )}
                 </div>
                 <div className="pt-1">
@@ -61,12 +61,12 @@ export default function HowToReceive() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-10 p-6 rounded-2xl border border-[#12A876]/30 bg-[#12A876]/5"
+          className="mt-10 p-6 rounded-2xl border border-[#29B7F4]/30 bg-[#29B7F4]/5"
         >
           <div className="flex items-start gap-3">
             <span className="text-2xl">🏪</span>
             <div>
-              <div className="text-[#12A876] font-semibold text-sm mb-1">Cash Out Anywhere</div>
+              <div className="text-[#29B7F4] font-semibold text-sm mb-1">Cash Out Anywhere</div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Can't find an ATM? No problem. Visit any of KURINGO's 500+ agents in markets, shops, and service centers across The Gambia. From Serrekunda to Basse — we're everywhere.
               </p>
@@ -78,7 +78,7 @@ export default function HowToReceive() {
           <a
           
             href="/#download"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#F4A72A]/90 to-[#F4A72A] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C2242B]/90 to-[#C2242B] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105"
           >
             Get KURINGO Free →
           </a>

@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../../context/LanguageContext'
 import { HiSpeakerphone } from 'react-icons/hi'
 import { MdLanguage } from 'react-icons/md'
 
 export default function WelcomeModal() {
-  const { selectLanguage } = useLanguage()
+  const { selectLanguage, setShowWelcomeModal } = useLanguage()
   const [visible, setVisible] = useState(false)
   const audioPlayed = useRef(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 500)
@@ -28,9 +30,11 @@ export default function WelcomeModal() {
     return () => clearTimeout(timer)
   }, [])
 
-  const handleSelect = (language) => {
+  const finishSelection = (language, path) => {
     window.speechSynthesis?.cancel()
     selectLanguage(language)
+    setShowWelcomeModal(false)
+    navigate(path)
   }
 
   return (
@@ -42,28 +46,32 @@ export default function WelcomeModal() {
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-[100] flex items-center justify-center p-4"
         >
-          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+          <div
+            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            onClick={() => finishSelection('english', '/')}
+          />
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 40 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ type: 'spring', damping: 20, stiffness: 200 }}
-            className="relative glass-card rounded-3xl p-8 max-w-md w-full shadow-2xl border border-[#0A6E4E]/40"
+            className="relative glass-card rounded-3xl p-8 max-w-md w-full shadow-2xl border border-[#29B7F4]/40"
+            onClick={(event) => event.stopPropagation()}
           >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-[#0A6E4E] to-[#12A876] rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] rounded-full" />
             <div className="flex justify-center mb-6">
               <motion.div
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0A6E4E] to-[#12A876] flex items-center justify-center shadow-lg"
+                className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center shadow-lg"
               >
                 <span className="font-display text-white text-3xl font-bold">K</span>
               </motion.div>
             </div>
             <div className="text-center mb-2">
               <div className="flex items-center justify-center gap-2 mb-3">
-                <HiSpeakerphone className="text-[#F4A72A]" size={18} />
-                <span className="text-[#F4A72A] text-xs font-medium uppercase tracking-wider">
+                <HiSpeakerphone className="text-[#C2242B]" size={18} />
+                <span className="text-[#C2242B] text-xs font-medium uppercase tracking-wider">
                   Welcome Message Playing...
                 </span>
               </div>
@@ -72,7 +80,7 @@ export default function WelcomeModal() {
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Powered by{' '}
-                <span className="text-[#12A876] font-semibold">Kuringo</span> cross border
+                <span className="text-[#29B7F4] font-semibold">Kuringo</span> cross border
                 fintech connecting the African diaspora in Europe, USA and UK with families in
                 West Africa.
               </p>
@@ -89,25 +97,25 @@ export default function WelcomeModal() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => handleSelect('soninke')}
-                className="w-full p-4 rounded-2xl bg-gradient-to-r from-[#0A6E4E]/30 to-[#12A876]/20 border border-[#0A6E4E]/50 hover:border-[#12A876] transition-all group"
+                onClick={() => finishSelection('soninke', '/soninke-assistant')}
+                className="w-full p-4 rounded-2xl bg-gradient-to-r from-[#29B7F4]/30 to-[#29B7F4]/20 border border-[#29B7F4]/50 hover:border-[#29B7F4] transition-all group"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#0A6E4E]/40 flex items-center justify-center text-2xl flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[#29B7F4]/40 flex items-center justify-center text-2xl flex-shrink-0">
                     🎙️
                   </div>
                   <div className="text-left">
-                    <div className="text-white font-semibold text-sm group-hover:text-[#12A876] transition-colors">
+                    <div className="text-white font-semibold text-sm group-hover:text-[#29B7F4] transition-colors">
                       I Speak Soninke
                     </div>
                     <div className="text-gray-400 text-xs mt-0.5">
                       Voice-guided experience in Soninke
                     </div>
-                    <div className="text-[#F4A72A] text-xs mt-1 font-medium">
+                    <div className="text-[#C2242B] text-xs mt-1 font-medium">
                       Soninke · Soninké
                     </div>
                   </div>
-                  <div className="ml-auto text-[#12A876] opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="ml-auto text-[#29B7F4] opacity-0 group-hover:opacity-100 transition-opacity">
                     →
                   </div>
                 </div>
@@ -115,15 +123,15 @@ export default function WelcomeModal() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => handleSelect('english')}
-                className="w-full p-4 rounded-2xl glass-card border border-white/10 hover:border-[#12A876]/50 transition-all group"
+                onClick={() => finishSelection('english', '/')}
+                className="w-full p-4 rounded-2xl glass-card border border-white/10 hover:border-[#29B7F4]/50 transition-all group"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl flex-shrink-0">
                     💬
                   </div>
                   <div className="text-left">
-                    <div className="text-white font-semibold text-sm group-hover:text-[#12A876] transition-colors">
+                    <div className="text-white font-semibold text-sm group-hover:text-[#29B7F4] transition-colors">
                       I Do Not Speak Soninke
                     </div>
                     <div className="text-gray-400 text-xs mt-0.5">
@@ -133,7 +141,7 @@ export default function WelcomeModal() {
                       English and other languages
                     </div>
                   </div>
-                  <div className="ml-auto text-[#12A876] opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="ml-auto text-[#29B7F4] opacity-0 group-hover:opacity-100 transition-opacity">
                     →
                   </div>
                 </div>

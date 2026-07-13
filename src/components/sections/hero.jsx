@@ -40,11 +40,11 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* ── LEFT: Text Content ── */}
-          <div>
+          <div className="lg:pl-8">
 
             {/* Badge */}
             <motion.div
@@ -53,8 +53,8 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-8"
             >
-              <div className="w-2 h-2 rounded-full bg-[#12A876] animate-pulse" />
-              <span className="text-[#12A876] text-xs font-medium">
+              <div className="w-2 h-2 rounded-full bg-[#29B7F4] animate-pulse" />
+              <span className="text-[#29B7F4] text-xs font-medium">
                 Cross-border fintech for the African diaspora
               </span>
             </motion.div>
@@ -89,10 +89,10 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="inline-flex items-center gap-2 mb-8 bg-[#F4A72A]/10 border border-[#F4A72A]/20 rounded-full px-4 py-1.5"
+              className="inline-flex items-center gap-2 mb-8 bg-[#C2242B]/10 border border-[#C2242B]/20 rounded-full px-4 py-1.5"
             >
-              <span className="text-[#F4A72A] text-xs">🐚</span>
-              <span className="text-[#F4A72A] text-xs">
+              <span className="text-[#C2242B] text-xs">🐚</span>
+              <span className="text-[#C2242B] text-xs">
                 <em>Kuringo</em> means Cowrie Shell in Mandinka — a symbol of trust for 3,000+ years
               </span>
             </motion.div>
@@ -106,15 +106,15 @@ export default function Hero() {
             >
               
                 < a href="#download"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#0A6E4E] to-[#12A876] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105 hover:shadow-[0_8px_30px_rgba(10,110,78,0.4)]">
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105 hover:shadow-[0_8px_30px_rgba(10,110,78,0.4)]">
                 Send Money Now
                 <HiArrowRight size={18} />
               </a>
               <Link
                 to="/how-to-send"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass-card text-white font-semibold rounded-2xl hover:border-[#12A876]/50 transition-all border border-white/10"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass-card text-white font-semibold rounded-2xl hover:border-[#29B7F4]/50 transition-all border border-white/10"
               >
-                <HiPlay size={18} className="text-[#12A876]" />
+                <HiPlay size={18} className="text-[#29B7F4]" />
                 How It Works
               </Link>
             </motion.div>
@@ -155,21 +155,21 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                className="relative glass-card rounded-3xl p-8 border border-[#0A6E4E]/30 shadow-[0_20px_60px_rgba(10,110,78,0.2)]"
+                className="relative glass-card rounded-3xl p-8 border border-[#29B7F4]/30 shadow-[0_20px_60px_rgba(10,110,78,0.2)]"
               >
                 {/* App header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#0A6E4E] to-[#12A876] flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center">
                       <span className="text-white text-xs font-bold">K</span>
                     </div>
                     <span className="text-white text-sm font-semibold">Kuringo</span>
                   </div>
-                  <div className="text-[#12A876] text-xs font-medium">● Live</div>
+                  <div className="text-[#29B7F4] text-xs font-medium">● Live</div>
                 </div>
 
                 {/* Transfer visual */}
-                <div className="bg-gradient-to-br from-[#0A6E4E] to-[#0D4F38] rounded-2xl p-6 mb-6">
+                <div className="bg-gradient-to-br from-[#29B7F4] to-[#0D4F38] rounded-2xl p-6 mb-6">
                   <div className="flex items-center justify-between mb-4">
                     <div className="text-center">
                       <div className="text-2xl mb-1">🇬🇧</div>
@@ -179,7 +179,7 @@ export default function Hero() {
                       <motion.div
                         animate={{ x: [0, 8, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
-                        className="text-center text-[#F4A72A] text-xl"
+                        className="text-center text-[#C2242B] text-xl"
                       >
                         →→→
                       </motion.div>
@@ -208,7 +208,7 @@ export default function Hero() {
                           <div className="text-white text-xs font-medium">{rail.type}</div>
                           <div className="text-gray-500 text-xs truncate">{rail.label}</div>
                         </div>
-                        <div className="w-2 h-2 rounded-full bg-[#12A876]" />
+                        <div className="w-2 h-2 rounded-full bg-[#29B7F4]" />
                       </div>
                     ))}
                   </div>
@@ -220,15 +220,15 @@ export default function Hero() {
               <motion.div
                 animate={{ x: [0, 8, 0], y: [0, -5, 0] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-                className="absolute -top-6 -right-6 glass-card rounded-2xl px-4 py-3 border border-[#12A876]/30 shadow-lg"
+                className="absolute -top-6 -right-6 glass-card rounded-2xl px-4 py-3 border border-[#29B7F4]/30 shadow-lg"
               >
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-[#12A876]/20 flex items-center justify-center text-sm">
+                  <div className="w-8 h-8 rounded-full bg-[#29B7F4]/20 flex items-center justify-center text-sm">
                     ✅
                   </div>
                   <div>
                     <div className="text-white text-xs font-semibold">Transfer Complete!</div>
-                    <div className="text-[#12A876] text-xs">Arrived in minutes</div>
+                    <div className="text-[#29B7F4] text-xs">Arrived in minutes</div>
                   </div>
                 </div>
               </motion.div>
@@ -237,13 +237,13 @@ export default function Hero() {
               <motion.div
                 animate={{ x: [0, -8, 0], y: [0, 8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, delay: 0.5 }}
-                className="absolute -bottom-4 -left-8 glass-card rounded-2xl px-4 py-3 border border-[#F4A72A]/30 shadow-lg"
+                className="absolute -bottom-4 -left-8 glass-card rounded-2xl px-4 py-3 border border-[#C2242B]/30 shadow-lg"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🐚</span>
                   <div>
                     <div className="text-white text-xs font-semibold">FCA Regulated</div>
-                    <div className="text-[#F4A72A] text-xs">Kuringo UK Ltd</div>
+                    <div className="text-[#C2242B] text-xs">Kuringo UK Ltd</div>
                   </div>
                 </div>
               </motion.div>
@@ -261,7 +261,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <div className="text-gray-600 text-xs">Scroll to explore</div>
-        <div className="w-px h-8 bg-gradient-to-b from-[#12A876] to-transparent" />
+        <div className="w-px h-8 bg-gradient-to-b from-[#29B7F4] to-transparent" />
       </motion.div>
 
     </section>

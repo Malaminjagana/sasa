@@ -6,14 +6,14 @@ const features = [
     icon: '⚡',
     title: 'Same-Day Delivery',
     description: 'Send money that arrives the same day or next day. Bank transfers and wallet payments processed within minutes.',
-    color: '#F4A72A',
+    color: '#C2242B',
     glow: 'rgba(244,167,42,0.2)',
   },
   {
     icon: '🔒',
     title: 'FCA Regulated',
     description: 'Kuringo UK Ltd operates under UK Financial Services regulations and the FCA. Full AML & KYC compliance — your money is protected.',
-    color: '#12A876',
+    color: '#29B7F4',
     glow: 'rgba(18,168,118,0.2)',
   },
   {
@@ -27,7 +27,7 @@ const features = [
     icon: '🐚',
     title: 'Built by the Diaspora',
     description: 'Our name, Kuringo, means Cowrie Shell in Mandinka — a 3,000-year-old symbol of trust. Built by and for the African diaspora community.',
-    color: '#F4A72A',
+    color: '#C2242B',
     glow: 'rgba(244,167,42,0.15)',
   },
   {
@@ -62,7 +62,7 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#12A876] text-sm font-semibold uppercase tracking-widest">Why KURINGO</span>
+          <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Why KURINGO</span>
          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4"> Why Choose <span className="gradient-text">Kuringo</span>
          </h2>
          <p className="text-gray-400 max-w-2xl mx-auto">Cross-border fintech built around the real needs of African diaspora communities — from Europe's cities to West Africa's homes.

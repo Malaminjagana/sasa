@@ -24,7 +24,7 @@ export default function HowToSend() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-14"
         >
-          <Link to="/" className="text-[#12A876] text-sm hover:underline mb-4 inline-block">
+          <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">
             ← Back to Home
           </Link>
           <h1 className="font-display text-5xl font-bold text-white mb-4">
@@ -42,11 +42,11 @@ export default function HowToSend() {
               <div className="flex items-start gap-5">
                 {/* Step number + icon */}
                 <div className="flex flex-col items-center gap-2 flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0A6E4E] to-[#12A876] flex items-center justify-center font-display font-bold text-white">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center font-display font-bold text-white">
                     {i + 1}
                   </div>
                   {i < sendSteps.length - 1 && (
-                    <div className="w-px h-6 bg-[#0A6E4E]/30" />
+                    <div className="w-px h-6 bg-[#29B7F4]/30" />
                   )}
                 </div>
 
@@ -68,12 +68,12 @@ export default function HowToSend() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-10 p-6 rounded-2xl border border-[#F4A72A]/30 bg-[#F4A72A]/5"
+          className="mt-10 p-6 rounded-2xl border border-[#C2242B]/30 bg-[#C2242B]/5"
         >
           <div className="flex items-start gap-3">
             <span className="text-2xl">💡</span>
             <div>
-              <div className="text-[#F4A72A] font-semibold text-sm mb-1">Pro Tip</div>
+              <div className="text-[#C2242B] font-semibold text-sm mb-1">Pro Tip</div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Save your frequently used contacts in KURINGO for faster transfers. You can also schedule recurring sends — great for regular remittances to family.
               </p>
@@ -85,7 +85,7 @@ export default function HowToSend() {
         <div className="text-center mt-12">
           <a
             href="#download"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#0A6E4E] to-[#12A876] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] text-white font-semibold rounded-2xl hover:opacity-90 transition-all hover:scale-105"
           >
             Download KURINGO Now →
           </a>

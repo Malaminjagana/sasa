@@ -43,12 +43,12 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0A6E4E] to-[#12A876] flex items-center justify-center animate-glow">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center animate-glow">
               <span className="text-white font-bold text-lg font-display">K</span>
             </div>
             <div>
               <span className="font-display text-xl font-bold text-white">SASA</span>
-              <span className="text-[#12A876] text-xs block leading-none">Connecting Families</span>
+              <span className="text-[#29B7F4] text-xs block leading-none">Connecting Families</span>
 
             </div>
           </Link>
@@ -59,9 +59,9 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-all duration-200 hover:text-[#12A876] relative group ${
+                className={`text-sm font-medium transition-all duration-200 hover:text-[#29B7F4] relative group ${
                   location.pathname === link.path
-                    ? 'text-[#12A876]'
+                    ? 'text-[#29B7F4]'
                     : 'text-gray-400'
                 }`}
               >
@@ -69,7 +69,7 @@ export default function Navbar() {
                 {location.pathname === link.path && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#12A876] rounded-full"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#29B7F4] rounded-full"
                   />
                 )}
               </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             
               <a href="#download"
-              className="px-5 py-2.5 bg-gradient-to-r from-[#0A6E4E] to-[#12A876] text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all duration-200 hover:scale-105"
+              className="px-5 py-2.5 bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all duration-200 hover:scale-105"
             >
               Download App
             </a>
@@ -113,7 +113,7 @@ export default function Navbar() {
                   to={link.path}
                   className={`block py-3 px-4 rounded-xl text-sm font-medium transition-colors ${
                     location.pathname === link.path
-                      ? 'bg-[#0A6E4E]/20 text-[#12A876]'
+                      ? 'bg-[#29B7F4]/20 text-[#29B7F4]'
                       : 'text-gray-400 hover:text-white hover:bg-white/5'
                   }`}
                 >
@@ -122,7 +122,7 @@ export default function Navbar() {
               ))}
               <a
                 href="#download"
-                className="block py-3 px-4 bg-gradient-to-r from-[#0A6E4E] to-[#12A876] text-white text-sm font-semibold rounded-xl text-center"
+                className="block py-3 px-4 bg-gradient-to-r from-[#29B7F4] to-[#29B7F4] text-white text-sm font-semibold rounded-xl text-center"
               >
                 Download App
               </a>

@@ -8,6 +8,7 @@ import HowToSend from './pages/HowToSend'
 import HowToReceive from './pages/HowToReceive'
 import FAQPage from './pages/FAQ'
 import PaymentRailsPage from './pages/PaymentRailsPage'
+import SoninkeAssistant from './pages/SoninkeAssistant'
 
 function App() {
   const { showWelcomeModal } = useLanguage()
@@ -23,6 +24,7 @@ function App() {
           <Route path="/how-to-receive" element={<HowToReceive />} />
           <Route path="/payment-rails" element={<PaymentRailsPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/soninke-assistant" element={<SoninkeAssistant />} />
         </Routes>
       </main>
       <Footer />
