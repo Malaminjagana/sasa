@@ -17,7 +17,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       {showWelcomeModal && <WelcomeModal />}
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-[120px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/how-to-send" element={<HowToSend />} />

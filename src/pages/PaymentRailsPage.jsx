@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function PaymentRailsPage() {
   return (
-    <div className="min-h-screen bg-[#0D1117] pt-24">
+    <div className="min-h-screen bg-[#0D1117] pt-[140px]">
       <div className="text-center py-12 px-4">
         <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">← Back to Home</Link>
         <motion.h1

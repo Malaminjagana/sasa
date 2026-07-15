@@ -15,8 +15,9 @@ const sendSteps = [
 
 export default function HowToSend() {
   return (
-    <div className="min-h-screen bg-[#0D1117] pt-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="min-h-screen bg-[#0D1117] pt-[140px]">
+     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-16">
+
 
         {/* Page header */}
         <motion.div
@@ -25,7 +26,7 @@ export default function HowToSend() {
           className="text-center mb-14"
         >
           <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">
-            ← Back to Home
+            ← Back to Home 
           </Link>
           <h1 className="font-display text-5xl font-bold text-white mb-4">
             How to <span className="gradient-text">Send Money</span>
