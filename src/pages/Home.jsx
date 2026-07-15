@@ -10,12 +10,14 @@ import ChatBot from '../components/ui/ChatBot'
 export default function Home() {
   return (
     <>
+      <div className="min-h-screen bg-[#0D1117] pt-[140px]">
+        <AppDownload />
+      </div>
       <Hero />
       <Features />
       <HowItWorks />
       <PaymentRails />
       <Markets />
-      <AppDownload />
       <FAQSection />
       <ChatBot />
     </>
