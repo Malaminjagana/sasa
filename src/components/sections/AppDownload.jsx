@@ -23,12 +23,12 @@ export default function AppDownload() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Get the App</span>
+          <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Download KURINGO</span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
-            Download <span className="gradient-text">KURINGO</span> Free
+            Get  <span className="gradient-text">KURINGO</span> Now
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Available for Android and iOS. Scan the QR code or tap a button below to download.
+             Fast, free, and available on Android & iOS. Scan the QR code or tap below to download.
           </p>
         </motion.div>
 
