@@ -171,7 +171,10 @@ export default function SoninkeAssistant() {
         <div className="glass-card rounded-3xl border border-[#29B7F4]/30 p-8 shadow-xl">
           <div className="relative text-center">
             
-            <h1 className="font-display text-4xl sm:text-5xl font-bold">Soninke Assistant</h1>
+           <h1 className="font-display text-5xl font-bold text-white mb-4">
+  <span className="gradient-text">Soninke</span><br />
+  <span className="gradient-text">Assistant</span>
+</h1>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Use your microphone to speak naturally. The assistant listens, processes your request, and responds in Soninke transliteration.
             </p>
