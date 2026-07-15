@@ -24,9 +24,10 @@ export default function AppDownload() {
           className="text-center mb-16"
         >
           <span className="text-[#29B7F4] text-sm font-semibold uppercase tracking-widest">Download KURINGO</span>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
-            Get  <span className="gradient-text">KURINGO</span> Now
-          </h2>
+        <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
+  Get <span className="gradient-text">KURINGO</span><br />
+  <span className="gradient-text">Now</span>
+</h2>
           <p className="text-gray-400 max-w-xl mx-auto">
              Fast, free, and available on Android & iOS. Scan the QR code or tap below to download.
           </p>

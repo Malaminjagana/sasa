@@ -28,9 +28,10 @@ export default function HowToSend() {
           <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">
             ← Back to Home 
           </Link>
-          <h1 className="font-display text-5xl font-bold text-white mb-4">
-            How to <span className="gradient-text">Send Money</span>
-          </h1>
+         <h1 className="font-display text-5xl font-bold text-white mb-4">
+  How to <span className="gradient-text"></span><br />
+  <span className="gradient-text">Send Money</span>
+</h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Sending money with KURINGO is quick and simple. Follow these steps.
           </p>

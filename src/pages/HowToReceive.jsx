@@ -24,9 +24,10 @@ export default function HowToReceive() {
           <Link to="/" className="text-[#29B7F4] text-sm hover:underline mb-4 inline-block">
             ← Back to Home
           </Link>
-          <h1 className="font-display text-5xl font-bold text-white mb-4">
-            How to <span className="gradient-text">Receive Money</span>
-          </h1>
+         <h1 className="font-display text-5xl font-bold text-white mb-4">
+  How to <span className="gradient-text"></span><br />
+  <span className="gradient-text"> Receive Money</span>
+</h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Receiving money on KURINGO is even easier than sending. No action needed from you!
           </p>

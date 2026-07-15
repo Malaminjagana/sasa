@@ -166,17 +166,11 @@ export default function SoninkeAssistant() {
   return (
     <section className="min-h-screen bg-[#0D1117] text-white pt-28 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <button
-          onClick={handleBack}
-          className="inline-flex items-center gap-2 text-sm text-[#29B7F4] hover:text-white mb-6"
-        >
-          <HiArrowLeft size={18} />
-          Back to Home
-        </button>
+        
 
         <div className="glass-card rounded-3xl border border-[#29B7F4]/30 p-8 shadow-xl">
           <div className="relative text-center">
-            <p className="text-[#29B7F4] uppercase text-xs tracking-widest mb-3">Web Center</p>
+            
             <h1 className="font-display text-4xl sm:text-5xl font-bold">Soninke Assistant</h1>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Use your microphone to speak naturally. The assistant listens, processes your request, and responds in Soninke transliteration.
