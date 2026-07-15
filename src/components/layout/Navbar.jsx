@@ -44,11 +44,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#29B7F4] to-[#29B7F4] flex items-center justify-center animate-glow">
-              <span className="text-white font-bold text-lg font-display">K</span>
+              <span className="text-white font-bold text-lg font-display">S</span>
             </div>
             <div>
-              <span className="font-display text-xl font-bold text-white">SASA</span>
-              <span className="text-[#29B7F4] text-xs block leading-none">Connecting Families</span>
+              <span className="font-display text-xl font-bold text-white"></span>
+              <span className="text-[#29B7F4] text-xs block leading-none"></span>
 
             </div>
           </Link>
