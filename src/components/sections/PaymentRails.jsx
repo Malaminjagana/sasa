@@ -84,7 +84,7 @@ export default function PaymentRails() {
             3 Ways to <span className="gradient-text">Receive Money</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Every family can access their funds — whether they use a smartphone, a bank account, or need cash in hand.
+            Every family can access their funds whether they use a smartphone, a bank account, or need cash in hand.
           </p>
         </motion.div>
 

@@ -8,6 +8,7 @@ import HowToSend from './pages/HowToSend'
 import HowToReceive from './pages/HowToReceive'
 import FAQPage from './pages/FAQ'
 import PaymentRailsPage from './pages/PaymentRailsPage'
+import SasaHistory from './pages/SasaHistory'
 import SoninkeAssistant from './pages/SoninkeAssistant'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/how-to-receive" element={<HowToReceive />} />
           <Route path="/payment-rails" element={<PaymentRailsPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/sasa-history" element={<SasaHistory />} />
           <Route path="/soninke-assistant" element={<SoninkeAssistant />} />
         </Routes>
       </main>

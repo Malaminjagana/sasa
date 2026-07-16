@@ -11,13 +11,13 @@ const steps = [
     step: '2',
     icon: '🪪',
     title: 'Verify Your Identity',
-    description: 'Register with your phone number and verify with a valid ID — required under FCA AML & KYC regulations to keep your transfers safe.',
+    description: 'Register with your phone number and verify with a valid ID required under FCA AML & KYC regulations to keep your transfers safe.',
   },
   {
     step: '3',
     icon: '💳',
     title: 'Fund Your Transfer',
-    description: 'Add money from your UK or European bank account. Competitive exchange rates, shown upfront — no surprises.',
+    description: 'Add money from your UK or European bank account. Competitive exchange rates, shown upfront no surprises.',
   },
   {
     step: '4',

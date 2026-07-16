@@ -129,7 +129,7 @@ export default function WelcomeModal() {
                       I Speak Soninke
                     </div>
                     <div className="text-gray-400 text-xs mt-0.5">
-                      Voice-guided experience in Soninke
+                      Voice guided experience in Soninke
                     </div>
                     <div className="text-[#C2242B] text-xs mt-1 font-medium">
                       Soninke · Soninké
@@ -155,7 +155,7 @@ export default function WelcomeModal() {
                       I Do Not Speak Soninke
                     </div>
                     <div className="text-gray-400 text-xs mt-0.5">
-                      Text-based chat in English
+                      Text based chat in English
                     </div>
                     <div className="text-gray-500 text-xs mt-1">
                       English and other languages
@@ -167,9 +167,7 @@ export default function WelcomeModal() {
                 </div>
               </motion.button>
             </div>
-            <p className="text-center text-gray-600 text-xs mt-4">
-              You can change this preference anytime
-            </p>
+           
           </motion.div>
         </motion.div>
       )}

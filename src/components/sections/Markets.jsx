@@ -55,7 +55,7 @@ export default function Markets() {
             5+ Markets Across <span className="gradient-text">Europe & UK</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Serving the Soninke diaspora first — Europe's most financially active remittance community —
+            Serving the Soninke diaspora first Europe's most financially active remittance community
             then expanding to the full West African diaspora.
           </p>
         </motion.div>

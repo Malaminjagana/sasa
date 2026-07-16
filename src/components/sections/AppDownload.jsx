@@ -1,6 +1,6 @@
 import { QRCodeSVG } from 'qrcode.react'
 import { motion } from 'framer-motion'
-import { FaGooglePlay, FaApple } from 'react-icons/fa'
+import { FaGooglePlay, FaApple, FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa'
 import AnimatedCard from '../ui/AnimatedCard'
 
 // Official KURINGO website
@@ -71,6 +71,35 @@ export default function AppDownload() {
               >
                 {APP_URL}
               </a>
+
+              <div className="mt-8 flex flex-col items-center gap-4">
+                <a
+                  href="#sasa-history"
+                  className="inline-flex items-center justify-center rounded-full bg-[#29B7F4] px-6 py-3 text-sm font-semibold text-black transition-all duration-200 hover:bg-[#7dd7ff]"
+                >
+                  The Story Behind SASA
+                </a>
+
+                <div className="flex items-center gap-3">
+                  {[
+                    { icon: FaFacebook, href: 'https://www.facebook.com/kuringo', color: '#1877F2' },
+                    { icon: FaTwitter, href: 'https://twitter.com/kuringo', color: '#1DA1F2' },
+                    { icon: FaInstagram, href: 'https://www.instagram.com/kuringo/', color: '#E1306C' },
+                    { icon: FaWhatsapp, href: 'https://wa.me/', color: '#25D366' },
+                    { icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/kuringo', color: '#0A66C2' },
+                  ].map(({ icon: Icon, href, color }) => (
+                    <a
+                      key={href}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:scale-110 hover:bg-white/10"
+                    >
+                      <Icon size={16} style={{ color }} />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <p className="mt-4 text-gray-400 text-sm">

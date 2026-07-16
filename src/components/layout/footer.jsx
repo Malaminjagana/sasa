@@ -65,14 +65,14 @@ export default function Footer() {
           
         </div>
 
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between pt-8">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between pt-8 pb-3.5">
           <p className="text-gray-500 text-xs sm:text-sm">
             © 2026 Kuringo. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-5 text-xs sm:text-sm text-gray-500">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">AML Policy</a>
+            <a href="https://kuringo.com/privacy-policy-3/" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://kuringo.com/terms-conditions/" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="https://kuringo.com/fraud-awarness/" className="hover:text-white transition-colors">Fraud Awarness</a>
           </div>
         </div>
       </div>

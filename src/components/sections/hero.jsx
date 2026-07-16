@@ -81,7 +81,7 @@ export default function Hero() {
               className="text-gray-400 text-lg leading-relaxed mb-4 max-w-lg"
             >
               Kuringo connects the African diaspora across Europe & UK with their families
-              in West Africa. Fast transfers, zero hidden fees, same-day delivery.
+              in West Africa. Fast transfers, zero hidden fees, same day delivery.
             </motion.p>
 
             {/* Cowrie shell badge */}
@@ -93,7 +93,7 @@ export default function Hero() {
             >
               <span className="text-[#C2242B] text-xs">🐚</span>
               <span className="text-[#C2242B] text-xs">
-                <em>Kuringo</em> means Cowrie Shell in Mandinka — a symbol of trust for 3,000+ years
+                <em>Kuringo</em> means Cowrie Shell in Mandinka a symbol of trust for 3,000+ years
               </span>
             </motion.div>
 
